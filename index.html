@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Decision Making Project 3</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+</head>
+<body>
+
+	<section id="main">
+		
+		<h1><u>MAUT method</u></h1>	
+		<h3>Enter your data</h3>
+
+		<form id="myForm" onsubmit="return submitFunction(event)">
+			<div id="DM_table">
+			</div>
+			<br><br><br><br><br>
+
+			<button class="submit" value="See results" onclick="leavesFunctions()">See results</button>
+		</form>
+		<button class="reset" value="Reset form" onclick="location.reload()">Reset form</button>
+		<br><br>
+		<h1><u>Alternatives:</u></h1>
+		<button class="submit" id="addA" value="Add alternative" onclick="addAlternative()">Add alternative</button>
+		<div id="alternativesDiv">
+		</div>
+		<button class="submit" id="calculate" value="Calculate" onclick="MAUT_Method()">Calculate</button>
+		<h1><u>Results:</u></h1>
+		<div id="results">
+			<canvas id="myChart" width="600px" height="400px"></canvas>
+		</div>	
+	</section>
+
+		
+	
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="script.js"></script>
+	
+</body>
+
+</html>
